@@ -7,7 +7,17 @@
     tools:context=".SignInActivity">
 
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignIn"
+        android:layout_below="@+id/SignInImage"/>
+
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/SignInImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"/>
 
 </RelativeLayout>
