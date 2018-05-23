@@ -15,5 +15,6 @@ public class MainActivity extends Activity {
 
     public void onClickSignIn (View view) {
         Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+        startActivity(intent);
     }
 }
