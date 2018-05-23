@@ -20,12 +20,14 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    //Populates the ActionBar with icons as needed
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    //Used to move to Settings through the Action Bar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
