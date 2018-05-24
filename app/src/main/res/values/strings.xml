@@ -2,4 +2,10 @@
     <string name="app_name">Gatekeeper</string>
     <string name="enter_button">Sign IN</string>
     <string name="settings">Settings</string>
+    <string-array name="titles">
+        <item>App Appearance</item>
+        <item>Sound</item>
+        <item>Permissions</item>
+        <item>Airplane Mode</item>
+    </string-array>
 </resources>
