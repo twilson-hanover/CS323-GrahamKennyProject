@@ -12,7 +12,7 @@
         android:id="@+id/signinlayout">
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:id="@+id/SignIn" />
 
@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/clearList"
             android:text="@string/clearlist"
-            android:onClick="onClickClear"/>
+            android:onClick="onClickClear"
+            android:layout_marginRight="5dp"/>
 
     </LinearLayout>
 
