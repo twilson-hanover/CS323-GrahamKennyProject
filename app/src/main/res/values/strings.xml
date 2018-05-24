@@ -9,4 +9,5 @@
         <item>Airplane Mode</item>
     </string-array>
     <string name="gatekeeper">Gate Keeper Logo</string>
+    <string name="signin_icon">Sign In</string>
 </resources>

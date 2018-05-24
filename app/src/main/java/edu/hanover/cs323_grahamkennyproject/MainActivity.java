@@ -35,6 +35,11 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.signinIcon:
+                Intent intent2 = new Intent(this, SignInActivity.class);
+                startActivity(intent2);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
