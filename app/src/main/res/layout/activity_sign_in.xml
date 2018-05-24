@@ -44,7 +44,8 @@
         android:id="@+id/Patrons"
         android:text="@string/patronslist"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_below="@id/signinlayout"/>
+        android:layout_below="@id/signinlayout"
+        android:freezesText="true"/>
 
 
 </RelativeLayout>

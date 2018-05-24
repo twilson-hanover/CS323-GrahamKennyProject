@@ -12,4 +12,5 @@
     <string name="signin_icon">Sign In</string>
     <string name="patronslist"></string>
     <string name="clearlist">Clear</string>
+    <string name="home">Home</string>
 </resources>

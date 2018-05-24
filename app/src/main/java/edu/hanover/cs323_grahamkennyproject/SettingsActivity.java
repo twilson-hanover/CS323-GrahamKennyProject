@@ -2,7 +2,10 @@ package edu.hanover.cs323_grahamkennyproject;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -31,6 +34,30 @@ public class SettingsActivity extends Activity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Toast toast = Toast.makeText(SettingsActivity.this, "Not yet implemented", Toast.LENGTH_SHORT);
             toast.show();
+        }
+    }
+
+    //Populates the ActionBar with icons as needed
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    //Used to move to Settings through the Action Bar
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.signinIcon:
+                Intent intent2 = new Intent(this, SignInActivity.class);
+                startActivity(intent2);
+                return true;
+            case R.id.homeButton:
+                Intent intent3 = new Intent( this, MainActivity.class);
+                startActivity(intent3);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }

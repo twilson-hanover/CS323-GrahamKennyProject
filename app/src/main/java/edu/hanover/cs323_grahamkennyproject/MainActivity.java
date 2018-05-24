@@ -34,7 +34,6 @@ public class MainActivity extends Activity {
                 Intent intent2 = new Intent(this, SignInActivity.class);
                 startActivity(intent2);
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
