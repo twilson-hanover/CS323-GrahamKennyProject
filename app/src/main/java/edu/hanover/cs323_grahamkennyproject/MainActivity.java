@@ -15,11 +15,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClickSignIn (View view) {
-        Intent intent = new Intent(MainActivity.this, SignInActivity.class);
-        startActivity(intent);
-    }
-
     //Populates the ActionBar with icons as needed
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

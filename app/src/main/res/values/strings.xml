@@ -10,4 +10,5 @@
     </string-array>
     <string name="gatekeeper">Gate Keeper Logo</string>
     <string name="signin_icon">Sign In</string>
+    <string name="patronslist"></string>
 </resources>
