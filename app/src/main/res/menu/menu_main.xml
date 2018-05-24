@@ -8,7 +8,7 @@
         android:title="@string/settings"
         android:orderInCategory="1"
         android:showAsAction="ifRoom"
-        android:icon="@drawable/baseline_verified_user_black_18dp"/>
+        android:icon="@drawable/settingsicon"/>
 
 
 </menu>

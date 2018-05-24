@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Gatekeeper</string>
-    <string name="enter_button">Sign IN</string>
+    <string name="app_name">GateKeeper</string>
+    <string name="enter_button">Sign In</string>
     <string name="settings">Settings</string>
     <string-array name="titles">
         <item>App Appearance</item>
@@ -8,4 +8,5 @@
         <item>Permissions</item>
         <item>Airplane Mode</item>
     </string-array>
+    <string name="gatekeeper">Gate Keeper Logo</string>
 </resources>
