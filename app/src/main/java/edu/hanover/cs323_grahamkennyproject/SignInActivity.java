@@ -23,4 +23,10 @@ public class SignInActivity extends Activity {
         tv.setText(newtv);
         et.setText("");
     }
+
+    //Clear the textview
+    public void onClickClear (View view) {
+        TextView tv = (TextView) findViewById(R.id.Patrons);
+        tv.setText("");
+    }
 }

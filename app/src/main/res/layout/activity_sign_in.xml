@@ -28,6 +28,13 @@
             android:text="@string/enter_button"
             android:onClick="onClickSignIn"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearList"
+            android:text="@string/clearlist"
+            android:onClick="onClickClear"/>
+
     </LinearLayout>
 
     <TextView
