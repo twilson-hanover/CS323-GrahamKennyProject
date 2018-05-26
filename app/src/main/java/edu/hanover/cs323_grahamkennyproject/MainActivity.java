@@ -15,6 +15,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
@@ -35,6 +37,26 @@ public class MainActivity extends Activity {
                         getApplicationContext().getResources(),
                         R.drawable.puppy);
                 IV.setImageBitmap(myBitmap);
+
+                //Build the barcode detector, tell it to look for QR codes
+                BarcodeDetector detector =
+                        new BarcodeDetector.Builder(getApplicationContext())
+                                .setBarcodeFormats(Barcode.DATA_MATRIX | Barcode.QR_CODE)
+                                .build();
+                if(!detector.isOperational()){
+                    Toast toast = Toast.makeText(MainActivity.this, "Detector could not be setup. Please see your administrator", Toast.LENGTH_LONG);
+                    toast.show();
+                    return;
+                }
+
+                //Create a frame from the bitmap and pass to the detector for it to process
+                Frame frame = new Frame.Builder().setBitmap(myBitmap).build();
+                SparseArray<Barcode> barcodes = detector.detect(frame);
+
+                //TODO: Case for the null and when there are more than one barcode to process (Currently hard-coded)
+                Barcode thisCode = barcodes.valueAt(0);
+                TextView txtView = (TextView) findViewById(R.id.txtContent);
+                txtView.setText(thisCode.rawValue);
             }
         });
     }
