@@ -12,9 +12,20 @@
         android:layout_height="wrap_content"
         android:text="This app is currently under construction. Please be patient!"/>
 
-    <ImageView
-        android:layout_width="match_parent"
+    <TextView android:text=""
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/construction"/>
+        android:id="@+id/txtContent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Process"
+        android:id="@+id/scan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgview"/>
 
 </LinearLayout>
